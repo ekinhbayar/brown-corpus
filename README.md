@@ -3,7 +3,7 @@ This repository holds various exports from Brown Corpus and useful scripts.
 
 Within the /exports directory, you can find raw and deduplicated exports in separate files.
  - Per category exports are located in /exports/categories. Deduplicated exports are sorted alphabetically (case sensitive).
- - The complete (raw) export file is named `raw_lexicon.txt` whereas deduplicated one is named `lexicon.txt`. 
+ - The complete (raw) export file is named `raw_lexicon.txt` whereas deduplicated one is named `lexicon.txt` and is also available in JSON format. 
  - All exports are tagged.
 
 You can find the python scripts used to export these within /scripts directory. 
