@@ -12,8 +12,9 @@ parsed_data = defaultdict(list)
 
 for line in raw_data:
     word, tag = line.split(" ")
-    if not tag in parsed_data[word]:
-        parsed_data[word].append(tag)
+    if not word.isdigit():
+        if not tag in parsed_data[word]:
+            parsed_data[word].append(tag)
 
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M_%S")
 output_file_name = "output-%s.txt" % now
