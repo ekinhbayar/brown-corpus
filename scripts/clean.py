@@ -1,6 +1,6 @@
 #!/usr/bin/env python2
 import datetime
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 import sys
 
 input_file_name = sys.argv[1]
@@ -10,12 +10,14 @@ with open(input_file_name, "rb") as input_file:
 
 parsed_data = defaultdict(list)
 
+
 for line in raw_data:
     word, tag = line.split(" ")
     if not word.isdigit():
         if not tag in parsed_data[word]:
             parsed_data[word].append(tag)
 
+parsed_data = OrderedDict(sorted(parsed_data.items(), key=lambda t: t))
 now = datetime.datetime.now().strftime("%Y_%m_%d-%H_%M_%S")
 output_file_name = "output-%s.txt" % now
 
