@@ -13,9 +13,9 @@ You can find the python scripts used to export these within /scripts directory.
  
 Both scripts generate raw, tagged lexicons and to use them you will need Python versions 2.7 or 3.2+ and `NLTK`.
 
---
 
-### Resources
+## Resources
+
 [Brown Corpus](https://en.wikipedia.org/wiki/Brown_Corpus) was compiled in the 1960s by Henry Kučera and W. Nelson Francis at Brown University, Providence, Rhode Island as a general corpus (text collection) in the field of corpus linguistics. It contains 500 samples of English-language text, totaling roughly one million words, compiled from works published in the United States in 1961.
 
  - [Part of Speech Tags](https://en.wikipedia.org/wiki/Brown_Corpus#Part-of-speech_tags_used)
@@ -26,9 +26,8 @@ Both scripts generate raw, tagged lexicons and to use them you will need Python 
  - [NLTK Corpora and Models](http://www.nltk.org/nltk_data/)
  - [NLTK repo on GitHub](https://github.com/nltk/nltk)
 
---
 
-### Installing NLTK
+## Installing NLTK
 
 **Mac/Unix**
 
@@ -38,7 +37,6 @@ Both scripts generate raw, tagged lexicons and to use them you will need Python 
 
 For older versions of Python it might be necessary to install [setuptools](http://pypi.python.org/pypi/setuptools) and to install pip run `sudo easy_install pip`.
 
---
 
 **Windows**
 32-bit binary installation
@@ -48,6 +46,7 @@ For older versions of Python it might be necessary to install [setuptools](http:
   -  Install [NLTK](http://pypi.python.org/pypi/nltk)
   -  Test installation: `Start>Python34`, then type `import nltk`
 
---
+
+---
 
 Thanks to [ulgens](https://github.com/ulgens) and [JonathanReeve](https://github.com/JonathanReeve) for their examples.
